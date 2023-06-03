@@ -1,17 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 30 14:04:35 2023
 
-@author: ftuha
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 29 22:08:52 2023
-
-@author: ftuha
-"""
-#MLPRegressor stands for Multi-Layer Perceptron Regressor
+#MLPRegressor stands for Multi-Layer Perceptron Regressor Normal
 
 import pandas as pd
 import numpy as np
