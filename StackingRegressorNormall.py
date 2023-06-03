@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 01:47:53 2023
-
-@author: ftuha
-"""
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -15,6 +9,8 @@ from sklearn.model_selection import GridSearchCV
 import matplotlib.pyplot as plt
 
 #Stacking Rergressor Normal 
+
+#   LinearRegression , Ridge, Lasso, SVR
 
 # Load the dataset
 df = pd.read_csv("LungCancer24.csv")
