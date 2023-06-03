@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 02:01:08 2023
-
-@author: ftuha
-"""
 
 
 import pandas as pd
@@ -17,7 +11,10 @@ from imblearn.under_sampling import RandomUnderSampler
 import matplotlib.pyplot as plt
 
 
-#stack regressor undersampling
+# Stack Regerssor Over Sampling Under Sampling
+
+#   LinearRegression , Ridge, Lasso, SVR
+#lung cancer SEER data
 
 # Load the dataset
 df = pd.read_csv("LungCancer24.csv")
