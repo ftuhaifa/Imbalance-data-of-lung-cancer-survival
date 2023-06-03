@@ -1,18 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 28 19:32:27 2023
 
-@author: ftuha
-"""
 
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 27 20:41:46 2023
-
-@author: ftuha
-"""
-
-#linear regression normal
+#linear regression Under Sampling (Random)
 
 
 from sklearn.ensemble import RandomForestClassifier
@@ -93,9 +81,6 @@ best_lr.fit(X_train, y_train)
 # Evaluate the new model on the test set
 y_pred = best_lr.predict(X_test)
 
-
-
-
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
@@ -127,8 +112,6 @@ print(f'Weighting Factor: {w}')
 # This method returns the confidence intervals for each coefficient in
 # the model.
 
-#Here's an example of how to do this:
-
 
 
 # Fit a linear regression model using statsmodels
@@ -148,11 +131,6 @@ print(conf_int)
 y_pred_train = best_lr.predict(X_train)
 residuals_train = y_train - y_pred_train
 std_dev_resid_train = np.std(residuals_train)
-
-
-
-
-
 
 
 print("################################################")
