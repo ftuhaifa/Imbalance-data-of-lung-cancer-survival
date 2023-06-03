@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 27 20:41:46 2023
 
-@author: ftuha
-"""
 
 #linear regression normal
 
@@ -137,11 +132,6 @@ print(conf_int)
 y_pred_train = best_lr.predict(X_train)
 residuals_train = y_train - y_pred_train
 std_dev_resid_train = np.std(residuals_train)
-
-
-
-
-
 
 
 print("################################################")
