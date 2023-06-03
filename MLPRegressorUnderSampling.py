@@ -1,10 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 29 22:08:52 2023
 
-@author: ftuha
-"""
-#MLPRegressor stands for Multi-Layer Perceptron Regressor
+#MLPRegressor stands for Multi-Layer Perceptron Regressor Random Under Sampling
+# SEER data
+# Lung Cancer
 
 import pandas as pd
 import numpy as np
