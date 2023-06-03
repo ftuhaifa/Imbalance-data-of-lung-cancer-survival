@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 29 22:05:24 2023
-
-@author: ftuha
-"""
 
 #MLPRegressor stands for Multi-Layer Perceptron Regressor
 
