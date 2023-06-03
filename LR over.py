@@ -1,25 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 28 19:41:39 2023
 
-@author: ftuha
-"""
 
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 28 19:32:27 2023
-
-@author: ftuha
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 27 20:41:46 2023
-
-@author: ftuha
-"""
-
-#linear regression normal
+#linear regression Over Smapling SMOTE
 
 
 from sklearn.ensemble import RandomForestClassifier
@@ -69,12 +50,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
                                                     random_state=42)
 
 
-
-# Undersample the majority class
-from imblearn.under_sampling import RandomUnderSampler
-undersampler = RandomUnderSampler(random_state=42)
-X_train, y_train = undersampler.fit_resample(X_train, y_train)
-
 from sklearn.model_selection import GridSearchCV
 
 # Define the hyperparameters and their range of values
@@ -105,17 +80,6 @@ best_lr.fit(X_train, y_train)
 # Evaluate the new model on the test set
 y_pred = best_lr.predict(X_test)
 
-
-#y_pred = y_pred.astype(np.int)
-#y_pred = np.where(y_pred > 0.5, 1, 0)
-#y_pred = np.round(y_pred).astype(int)
-
-
-#y_pred = np.round(y_pred).astype(int) - 1
-#y_pred = y_pred + 1
-
-
-
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
@@ -130,8 +94,6 @@ y_mean = np.mean(y_test)
 
 #Calculate weighting factor for custom ensemble
 w = np.abs(residuals / (y_test - y_mean))
-
-
 
 print(f'RMSE: {rmse}')
 print(f'R-squared: {r2}')
@@ -168,11 +130,6 @@ print(conf_int)
 y_pred_train = best_lr.predict(X_train)
 residuals_train = y_train - y_pred_train
 std_dev_resid_train = np.std(residuals_train)
-
-
-
-
-
 
 
 print("################################################")
