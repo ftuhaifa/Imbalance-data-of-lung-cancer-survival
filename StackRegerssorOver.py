@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 02:08:16 2023
 
-@author: ftuha
-"""
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -17,6 +12,7 @@ import matplotlib.pyplot as plt
 
 
 # Stack Regerssor Over Sampling
+#  'ridge__alpha', 'lasso__alpha', 'svr__C', 'svr__kernel
 # Load the dataset
 df = pd.read_csv("LungCancer24.csv")
 
