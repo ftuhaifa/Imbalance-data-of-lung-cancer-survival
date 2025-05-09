@@ -12,7 +12,7 @@ Created on Sun Jul 16 08:38:27 2023
 @author: ftuha
 """
 
-#Standard GBT SMOTE
+#Standard GBT
 
 # -*- coding: utf-8 -*-
 """
